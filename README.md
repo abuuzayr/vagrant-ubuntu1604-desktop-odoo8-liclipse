@@ -1,4 +1,4 @@
-# Ubuntu 16.04 Vagrant Image + Odoo Community Backports v9.0 + Liclipse
+# Ubuntu 16.04 Vagrant Image + Odoo Community Backports v8.0 + Liclipse
 
 This image is based off [boxcutter/ubuntu1604-desktop](https://atlas.hashicorp.com/box-cutter/boxes/ubuntu1604-desktop).
 

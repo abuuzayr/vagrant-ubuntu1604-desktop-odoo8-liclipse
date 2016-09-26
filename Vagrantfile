@@ -76,7 +76,7 @@ OE_HOME="/home/$OE_USER"
 OE_HOME_EXT="/home/$OE_USER/${OE_USER}-server"
 
 OE_PORT="8069"
-OE_VERSION="9.0"
+OE_VERSION="8.0"
 
 OE_SUPERADMIN="admin"
 OE_CONFIG="${OE_USER}-server"

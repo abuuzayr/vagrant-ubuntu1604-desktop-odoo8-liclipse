@@ -113,7 +113,7 @@ sudo adduser $OE_USER sudo
 sudo mkdir /var/log/$OE_USER
 sudo chown $OE_USER:$OE_USER /var/log/$OE_USER
 
-sudo git clone --depth 1 --branch $OE_VERSION https://github.com/OCA/OCB.git $OE_HOME_EXT/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/odoo/odoo.git $OE_HOME_EXT/
 git config --global core.fileMode false
 
 sudo chown -R $OE_USER:$OE_USER $OE_HOME

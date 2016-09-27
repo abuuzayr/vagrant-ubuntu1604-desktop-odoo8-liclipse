@@ -85,22 +85,60 @@ WKHTMLTOX_X64=http://download.gna.org/wkhtmltopdf/0.12/0.12.1/wkhtmltox-0.12.1_l
 sudo apt-get update
 sudo apt-get dist-upgrade -y
 
-sudo apt-get install postgresql -y
+sudo apt-get install -y \
+  wget \
+  subversion \
+  git \
+  bzr \
+  bzrtools \
+  python-pip \
+  gdebi-core
+
+sudo apt-get install -y \
+  node-clean-css \
+  node-less \
+  postgresql \
+  python-dateutil \
+  python-feedparser \
+  python-gevent \
+  python-ldap \
+  python-libxslt1 \
+  python-lxml \
+  python-mako \
+  python-openid \
+  python-psycopg2 \
+  python-pybabel \
+  python-pychart \
+  python-pydot \
+  python-pyparsing \
+  python-reportlab \
+  python-simplejson \
+  python-tz \
+  python-vatnumber \
+  python-vobject \
+  python-webdav \
+  python-werkzeug \
+  python-xlwt \
+  python-yaml \
+  python-zsi \
+  python-docutils \
+  python-psutil \
+  python-mock \
+  python-unittest2 \
+  python-jinja2 \
+  python-pypdf \
+  python-decorator \
+  python-requests \
+  python-passlib \
+  python-pil
+
 sudo su - postgres -c "createuser -s $OE_USER" 2> /dev/null || true
-
-sudo apt-get install wget subversion git bzr bzrtools python-pip gdebi-core -y
-
-sudo apt-get install python-dateutil python-feedparser python-ldap python-libxslt1 python-lxml python-mako python-openid python-psycopg2 python-pybabel python-pychart python-pydot python-pyparsing python-reportlab python-simplejson python-tz python-vatnumber python-vobject python-webdav python-werkzeug python-xlwt python-yaml python-zsi python-docutils python-psutil python-mock python-unittest2 python-jinja2 python-pypdf python-decorator python-requests python-passlib python-pil -y
 
 sudo pip install --upgrade pip
 sudo pip install gdata psycogreen
 
 # This is for compatibility with Ubuntu 16.04. Will work on 14.04, 15.04 and 16.04
 sudo -H pip install suds
-
-sudo apt-get install node-clean-css -y
-sudo apt-get install node-less -y
-sudo apt-get install python-gevent -y
 
 sudo wget $WKHTMLTOX_X64 -q
 sudo gdebi --n `basename $WKHTMLTOX_X64`

@@ -83,7 +83,7 @@ OE_CONFIG="${OE_USER}-server"
 WKHTMLTOX_X64=http://download.gna.org/wkhtmltopdf/0.12/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb
 
 sudo apt-get update
-sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
 
 sudo apt-get install postgresql -y
 sudo su - postgres -c "createuser -s $OE_USER" 2> /dev/null || true

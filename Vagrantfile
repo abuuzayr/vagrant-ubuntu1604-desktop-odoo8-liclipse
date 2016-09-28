@@ -66,6 +66,7 @@ Vagrant.configure(2) do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
 set -e
+set -x
 
 sudo locale-gen
 sudo localectl set-locale LANG="en_US.UTF-8"
